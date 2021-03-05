@@ -1,0 +1,127 @@
+body {
+  background-color: lightblue;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 10px;
+}
+
+@font-face {
+  font-family: "Indie Flower";
+  src: url("polices/IndieFlower-Regular.eot");
+  src: url("polices/IndieFlower-Regular.eot?#iefix") format("embedded-opentype"),
+    url("polices/IndieFlower-Regular.woff") format("woff"),
+    url("polices/IndieFlower-Regular.ttf") format("truetype"),
+    url("polices/IndieFlower-Regular.svg#IndieFlower") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*En-tëte*/
+
+#top {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo {
+  border: black 1px outset;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px;
+}
+
+nav {
+  margin-top: 0px;
+}
+
+nav ul li {
+  list-style: none;
+  font-size: 24px;
+  margin-right: 150px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  background-color: dodgerblue;
+  border: black 1px outset;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px;
+  margin-left: 0px;
+  height: 100px;
+  align-items: center;
+}
+
+.menu:hover {
+  color: red;
+  text-shadow: black 1px 1px 1px;
+}
+
+@media all and (max-width: 1024px) {
+  nav ul {
+    flex-direction: column;
+    height: 200px;
+  }
+}
+
+/*Page Home*/
+
+#welcome {
+  background-image: url("assets/chateau.jpg");
+  height: 600px;
+  text-align: center;
+  border: black 1px outset;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px;
+  width: 100%;
+}
+
+#welcome h1 {
+  font-size: 50px;
+  padding-top: 200px;
+  color: blue;
+  font-family: "Indie Flower", cursive;
+}
+
+p {
+  text-align: justify;
+}
+
+/*Page Royal Family*/
+
+#pictures {
+  display: flex;
+  justify-content: space-between;
+}
+
+.photos {
+  border: 1px black outset;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px;
+}
+
+h3 {
+  text-align: center;
+}
+
+@media all and (max-width: 1024px) {
+  #pictures {
+    flex-direction: column;
+  }
+}
+/*Page Royal Assets*/
+
+table {
+  text-align: center;
+}
+
+#tableau {
+  display: flex;
+  justify-content: center;
+}
+
+/*Page Contact*/

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Web Development Tech Challenge</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="top">
+      <header>
+        <img src="assets/logo.png" alt="logo" height="100px" />
+      </header>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="menu">Home</a></li>
+          <li><a href="royal-family.html" class="menu">Royal Family</a></li>
+          <li><a href="assets.html" class="menu">Royal Assets</a></li>
+          <li><a href="contact.html" class="menu">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+    <br />
+    <h2>
+      Contact the Royal Kingdom
+    </h2>
+    <form id="contactForm">
+      <label for="name">Name</label><br />
+      <input type="text" id="name" name="Name" size="100" /><br />
+      <label for="email">Email</label><br />
+      <input type="email" id="email" name="Email" size="100" /><br />
+      <label for="message">Message</label><br />
+      <textarea name="Message" id="message" rows="10" cols="82">
+Votre message ici...</textarea
+      ><br />
+      <input type="submit" value="Send" />
+      <input type="reset" value="Clear" />
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
